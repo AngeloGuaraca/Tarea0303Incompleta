@@ -4,8 +4,6 @@
  */
 package modelo;
 
-import java.time.LocalDate;
-
 /**
  *
  * @author user
@@ -13,14 +11,11 @@ import java.time.LocalDate;
 public class Actor {
     private String nombre;
     private String nacionalidad;
-    private LocalDate fecha;
+    private String fecha;
     private String pais;
     private int edad;
 
- 
-    
-    
-    public Actor(String nombre, String nacionalidad, LocalDate fecha, String pais, int edad) {
+    public Actor(String nombre, String nacionalidad, String fecha, String pais, int edad) {
         this.nombre = nombre;
         this.nacionalidad = nacionalidad;
         this.fecha = fecha;
@@ -28,17 +23,13 @@ public class Actor {
         this.edad = edad;
     }
 
-    public Actor(Integer valueOf, String arg, String arg0) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Actor(String nombre, String nacionalidad, String fecha, String pais, Integer edad) {
+        this.nombre = nombre;
+        this.nacionalidad = nacionalidad;
+        this.fecha = fecha;
+        this.pais = pais;
+        this.edad = edad;
     }
-
-    public Actor(Integer valueOf, String arg, String arg0, String arg1, String arg2, String arg3) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    
-    
-    
     public String getNombre() {
         return nombre;
     }
@@ -55,11 +46,11 @@ public class Actor {
         this.nacionalidad = nacionalidad;
     }
 
-    public LocalDate getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
@@ -81,9 +72,9 @@ public class Actor {
 
     @Override
     public String toString() {
-        return "Actor{" + "nombre=" + nombre + ", nacionalidad=" + nacionalidad 
-                + ", fecha=" + fecha + ", pais=" + pais + ", edad=" + edad + '}';
+        return "Actor{" + "nombre=" + nombre + ", nacionalidad=" + nacionalidad + ", fecha=" + fecha + ", pais=" + pais + ", edad=" + edad + '}';
     }
-    
-    
+
+
+      
 }

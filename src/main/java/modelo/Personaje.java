@@ -13,10 +13,10 @@ public class Personaje {
     private String nombre;
     private int numeroDeEscenas;
     private int edadDelPersonaje;
-    private Actor actor;
-    private Pelicula pelicula;
+    private String actor;
+    private String pelicula;
 
-    public Personaje(String nombre, int numeroDeEscenas, int edadDelPersonaje, Actor actor, Pelicula pelicula) {
+    public Personaje(String nombre, int numeroDeEscenas, int edadDelPersonaje, String actor, String pelicula) {
         this.nombre = nombre;
         this.numeroDeEscenas = numeroDeEscenas;
         this.edadDelPersonaje = edadDelPersonaje;
@@ -24,16 +24,15 @@ public class Personaje {
         this.pelicula = pelicula;
     }
 
-    public Personaje(Integer valueOf, String arg, String arg0) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Personaje(String nombre, String actor, String pelicula, Integer numeroDeEscenas,Integer edadDelPersonaje ) {
+        
+        this.nombre = nombre;
+        this.actor = actor;
+        this.pelicula = pelicula;
+        this.numeroDeEscenas = numeroDeEscenas;
+        this.edadDelPersonaje = edadDelPersonaje;
+        
     }
-
-    public Personaje() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
-    
-    
 
     public String getNombre() {
         return nombre;
@@ -59,32 +58,30 @@ public class Personaje {
         this.edadDelPersonaje = edadDelPersonaje;
     }
 
-    public Actor getActor() {
+    public String getActor() {
         return actor;
     }
 
-    public void setActor(Actor actor) {
+    public void setActor(String actor) {
         this.actor = actor;
     }
 
-    public Pelicula getPelicula() {
+    public String getPelicula() {
         return pelicula;
     }
 
-    public void setPelicula(Pelicula pelicula) {
+    public void setPelicula(String pelicula) {
         this.pelicula = pelicula;
     }
 
     @Override
     public String toString() {
-        return "Personaje{" + "nombre=" + nombre + ", numeroDeEscenas=" 
-                + numeroDeEscenas + ", edadDelPersonaje=" + edadDelPersonaje +
-                ", actor=" + actor + ", pelicula=" + pelicula + '}';
+        return "Personaje{" + "nombre=" + nombre + ", numeroDeEscenas=" + numeroDeEscenas 
+                + ", edadDelPersonaje=" + edadDelPersonaje + ", actor=" + actor + ", pelicula="
+                + pelicula + '}';
     }
 
-    public boolean getCodigo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    
     
     
 }

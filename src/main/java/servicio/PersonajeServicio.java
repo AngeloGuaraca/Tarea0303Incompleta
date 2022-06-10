@@ -30,26 +30,7 @@ public class PersonajeServicio implements IPersonajeServicio {
            return this.personajeList;
     }
 ///////////////////////////////////////////agregamos nuevo
-    @Override
-    public Personaje buscarPorCodigo(int codigo) {
-        
-            var personaje = new Personaje();
-        for(Personaje per:this.personajeList){
-            if(per.getCodigo()==i){
-                personaje=per;
-                break;
-            }
-     }
-return personaje;
-    }
 
-
-    @Override
-    public Personaje eliminar(int codigo) {
-        
-                var personaje = this.buscarPorCodigo(codigo);
-        this.personajeList.remove(personaje);
-        return personaje;
-         }
+ 
     }
     

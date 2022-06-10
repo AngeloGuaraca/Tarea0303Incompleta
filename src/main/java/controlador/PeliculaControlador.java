@@ -18,8 +18,14 @@ public class PeliculaControlador {
     
         private final PeliculaServicio personajeServicio = new PeliculaServicio();
     
-    public Pelicula crear(String [] params) {
-        var pelicula = new Pelicula(Integer.valueOf(params[0]),params[1]);
+    public Pelicula crear(String [] args) {
+        
+          var pelicula = new Pelicula (args[0],args[3],Integer.valueOf(args[1]),Integer.valueOf(args[2]),args[4]);
+      
+        
+        
+        
+        
         this.personajeServicio.crear(pelicula);
         return pelicula;
     }

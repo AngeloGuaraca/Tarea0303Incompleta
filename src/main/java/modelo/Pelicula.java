@@ -25,13 +25,16 @@ public class Pelicula {
         this.paisOrigen = paisOrigen;
     }
 
-    public Pelicula(Integer valueOf, String arg, String arg0) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    public Pelicula(String nombre, String paisOrigen, Integer anioDeEstreno,Integer ranking, String peliculaTipo ) {
+        this.nombre = nombre;
+        this.paisOrigen = paisOrigen;
+        this.anioDeEstreno = anioDeEstreno;
+        this.ranking = ranking;
+        this.peliculaTipo = peliculaTipo;
+        
+      }
 
-    public Pelicula(Integer valueOf, String param) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+  
 
     
     

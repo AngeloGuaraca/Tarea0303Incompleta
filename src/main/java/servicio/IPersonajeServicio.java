@@ -16,7 +16,6 @@ public interface IPersonajeServicio {
      public Personaje crear(Personaje personaje);
     public List<Personaje> listar(); 
     
-    public Personaje buscarPorCodigo(int codigo);
-    public Personaje eliminar(int codigo);
+ 
     
 }
