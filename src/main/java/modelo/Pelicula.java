@@ -14,30 +14,18 @@ public class Pelicula {
     private String nombre;
     private String peliculaTipo;
     private int anioDeEstreno;
-    private int ranking;
+    private int codigo;
     private String paisOrigen;
 
-    public Pelicula(String nombre, String peliculaTipo, int anioDeEstreno, int ranking, String paisOrigen) {
+    public Pelicula(String nombre, String peliculaTipo, int anioDeEstreno, int codigo, String paisOrigen) {
         this.nombre = nombre;
         this.peliculaTipo = peliculaTipo;
         this.anioDeEstreno = anioDeEstreno;
-        this.ranking = ranking;
+        this.codigo = codigo;
         this.paisOrigen = paisOrigen;
     }
-
-    public Pelicula(String nombre, String paisOrigen, Integer anioDeEstreno,Integer ranking, String peliculaTipo ) {
-        this.nombre = nombre;
-        this.paisOrigen = paisOrigen;
-        this.anioDeEstreno = anioDeEstreno;
-        this.ranking = ranking;
-        this.peliculaTipo = peliculaTipo;
-        
-      }
-
-  
-
     
-    
+
     public String getNombre() {
         return nombre;
     }
@@ -62,12 +50,12 @@ public class Pelicula {
         this.anioDeEstreno = anioDeEstreno;
     }
 
-    public int getRanking() {
-        return ranking;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public void setRanking(int ranking) {
-        this.ranking = ranking;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     public String getPaisOrigen() {
@@ -80,10 +68,11 @@ public class Pelicula {
 
     @Override
     public String toString() {
-        return "Pelicula{" + "nombre=" + nombre + ", peliculaTipo=" 
-                + peliculaTipo + ", anioDeEstreno=" + anioDeEstreno +
-                ", ranking=" + ranking + ", paisOrigen=" + paisOrigen + '}';
+        return "Pelicula{" + "nombre=" + nombre + ", peliculaTipo=" + peliculaTipo + ", anioDeEstreno=" + anioDeEstreno + ", codigo=" + codigo + ", paisOrigen=" + paisOrigen + '}';
     }
+
+
+    
     
     
 }

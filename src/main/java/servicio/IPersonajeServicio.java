@@ -13,7 +13,11 @@ import modelo.Personaje;
  */
 public interface IPersonajeServicio {
     
-     public Personaje crear(Personaje personaje);
+    public Personaje crear(Personaje personaje);
+    public Personaje modificar(int codigoPersonaje, Personaje personajeNuevo);
+    public Personaje eliminar(int codigoPersonaje);
+    public Personaje buscarPorCodigo(int codigoPersonaje);
+    public int buscarPosicion(Personaje personaje);
     public List<Personaje> listar(); 
     
  

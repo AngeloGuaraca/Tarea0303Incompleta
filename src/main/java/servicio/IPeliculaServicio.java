@@ -14,6 +14,7 @@ import modelo.Pelicula;
 public interface IPeliculaServicio {
     
      public Pelicula crear(Pelicula pelicula);
+     public Pelicula buscarPorCodigo(int codigoPelicula);
     public List<Pelicula> listar(); 
     
 }

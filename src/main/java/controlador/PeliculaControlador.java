@@ -20,7 +20,7 @@ public class PeliculaControlador {
     
     public Pelicula crear(String [] args) {
         
-          var pelicula = new Pelicula (args[0],args[3],Integer.valueOf(args[1]),Integer.valueOf(args[2]),args[4]);
+          var pelicula = new Pelicula (args[0],args[1],Integer.valueOf(args[2]),Integer.valueOf(args[3]),args[4]);
       
         
         

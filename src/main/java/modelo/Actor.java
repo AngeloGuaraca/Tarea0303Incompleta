@@ -11,25 +11,29 @@ package modelo;
 public class Actor {
     private String nombre;
     private String nacionalidad;
-    private String fecha;
-    private String pais;
     private int edad;
+    private String pais;
+    private int codigo;
 
-    public Actor(String nombre, String nacionalidad, String fecha, String pais, int edad) {
+    public Actor(String nombre, String nacionalidad, int edad, String pais, int codigo) {
         this.nombre = nombre;
         this.nacionalidad = nacionalidad;
-        this.fecha = fecha;
-        this.pais = pais;
         this.edad = edad;
+        this.pais = pais;
+        this.codigo = codigo;
     }
 
-    public Actor(String nombre, String nacionalidad, String fecha, String pais, Integer edad) {
+    public Actor(String nombre, String nacionalidad, Integer edad, Integer codigo, String pais) {
         this.nombre = nombre;
         this.nacionalidad = nacionalidad;
-        this.fecha = fecha;
-        this.pais = pais;
         this.edad = edad;
+        this.pais = pais;
+        this.codigo = codigo;
+        
     }
+
+   
+
     public String getNombre() {
         return nombre;
     }
@@ -46,12 +50,12 @@ public class Actor {
         this.nacionalidad = nacionalidad;
     }
 
-    public String getFecha() {
-        return fecha;
+    public int getEdad() {
+        return edad;
     }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
     public String getPais() {
@@ -62,17 +66,17 @@ public class Actor {
         this.pais = pais;
     }
 
-    public int getEdad() {
-        return edad;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     @Override
     public String toString() {
-        return "Actor{" + "nombre=" + nombre + ", nacionalidad=" + nacionalidad + ", fecha=" + fecha + ", pais=" + pais + ", edad=" + edad + '}';
+        return "Actor{" + "nombre=" + nombre + ", nacionalidad=" + nacionalidad + ", edad=" + edad + ", pais=" + pais + ", codigo=" + codigo + '}';
     }
 
 

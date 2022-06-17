@@ -14,6 +14,8 @@ import modelo.Actor;
 public interface IActorServicio {
     
     public Actor crear(Actor actor);
+    public Actor buscarPorCodigo(int codigoActor);
     public List<Actor> listar(); 
+    
     
 }

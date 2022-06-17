@@ -7,6 +7,7 @@ package servicio;
 import java.util.ArrayList;
 import java.util.List;
 import modelo.Actor;
+import modelo.Pelicula;
 
 
 /**
@@ -28,5 +29,23 @@ public class ActorServicio implements IActorServicio {
             
          return this.actorList;
      }
+
+    @Override
+    public Actor buscarPorCodigo(int codigoActor) {
+        Actor actor=null;
+        for(var c:this.actorList){
+            if(codigoActor==c.getCodigo()){
+                actor=c;
+                break;
+            }
+        }
+        return actor;
+     }
+
+    
+
+   
+        
+   
     
 }

@@ -11,28 +11,30 @@ package modelo;
 public class Personaje {
     
     private String nombre;
-    private int numeroDeEscenas;
-    private int edadDelPersonaje;
-    private String actor;
-    private String pelicula;
+    private String numeroDeEscenas;
+    private int codigo;
+    private Actor actor;
+    private Pelicula pelicula;
 
-    public Personaje(String nombre, int numeroDeEscenas, int edadDelPersonaje, String actor, String pelicula) {
+    public Personaje(String nombre, String numeroDeEscenas, int codigo, Actor actor, Pelicula pelicula) {
         this.nombre = nombre;
         this.numeroDeEscenas = numeroDeEscenas;
-        this.edadDelPersonaje = edadDelPersonaje;
+        this.codigo = codigo;
         this.actor = actor;
         this.pelicula = pelicula;
     }
 
-    public Personaje(String nombre, String actor, String pelicula, Integer numeroDeEscenas,Integer edadDelPersonaje ) {
-        
+
+    public Personaje(String nombre, String numeroDeEscenas, Integer codigo, Pelicula pelicula, Actor actor) {
         this.nombre = nombre;
+        this.numeroDeEscenas = numeroDeEscenas;
+        this.codigo = codigo;
         this.actor = actor;
         this.pelicula = pelicula;
-        this.numeroDeEscenas = numeroDeEscenas;
-        this.edadDelPersonaje = edadDelPersonaje;
         
-    }
+     }
+
+    
 
     public String getNombre() {
         return nombre;
@@ -42,46 +44,43 @@ public class Personaje {
         this.nombre = nombre;
     }
 
-    public int getNumeroDeEscenas() {
+    public String getNumeroDeEscenas() {
         return numeroDeEscenas;
     }
 
-    public void setNumeroDeEscenas(int numeroDeEscenas) {
+    public void setNumeroDeEscenas(String numeroDeEscenas) {
         this.numeroDeEscenas = numeroDeEscenas;
     }
 
-    public int getEdadDelPersonaje() {
-        return edadDelPersonaje;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public void setEdadDelPersonaje(int edadDelPersonaje) {
-        this.edadDelPersonaje = edadDelPersonaje;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
-    public String getActor() {
+    public Actor getActor() {
         return actor;
     }
 
-    public void setActor(String actor) {
+    public void setActor(Actor actor) {
         this.actor = actor;
     }
 
-    public String getPelicula() {
+    public Pelicula getPelicula() {
         return pelicula;
     }
 
-    public void setPelicula(String pelicula) {
+    public void setPelicula(Pelicula pelicula) {
         this.pelicula = pelicula;
     }
 
     @Override
     public String toString() {
-        return "Personaje{" + "nombre=" + nombre + ", numeroDeEscenas=" + numeroDeEscenas 
-                + ", edadDelPersonaje=" + edadDelPersonaje + ", actor=" + actor + ", pelicula="
-                + pelicula + '}';
+        return "Personaje{" + "nombre=" + nombre + ", numeroDeEscenas=" +
+                numeroDeEscenas + ", codigo=" + codigo + ", actor=" + actor +
+                ", pelicula=" + pelicula + '}';
     }
-
-    
-    
-    
+  
 }

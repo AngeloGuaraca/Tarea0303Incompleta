@@ -27,6 +27,19 @@ public class PeliculaServicio implements IPeliculaServicio {
         
         return this.peliculaList;
     }
+
+    @Override
+    public Pelicula buscarPorCodigo(int codigoPelicula) {
+        
+                Pelicula pelicula=null;
+        for(var c:this.peliculaList){
+            if(codigoPelicula==c.getCodigo()){
+                pelicula=c;
+                break;
+            }
+        }
+        return pelicula;
+        }
     
     
     
